@@ -194,16 +194,45 @@ public class Game {
     }
 
 
-    
-    private boolean ResultGame(String[] response) {
+
+    public void putResultCombi (int[] tableau) {
+        for (int i = 0; i < tableau.length; i++) {
+            System.out.print(tableau [i]);
+        }
+        System.out.print("\n");
     }
 
-    private void putResponse(String[] response) {
+    public String[] compare(int[] combination, int[] proposition ) {
+        int i = 0;
+        do {
+            if (combination[i] < proposition[i]) {
+                response[i] = "-";
+            } else if (combination[i] > proposition[i]) {
+                response[i] = "+";
+            } else {
+                response[i] = "=";
+            }
+
+            i++;
+        }while (i < 4);
+        return response;
     }
 
-    private String[] compare(int[] combination, int[] proposition) {
+    public void putResponse(String[] tableau) {
+        for (int i = 0; i < tableau.length; i++) {
+            System.out.print(tableau[i]);
+        }
+        System.out.println("\n");
     }
 
-    private void putResultCombi(int[] combination) {
+    public boolean ResultGame(String[] response){
+        boolean x = true;
+
+        for (int i = 0; i < response.length; i++) {
+            if (response[i].equals("+") || response[i].equals("-")) {
+                x = false;
+            }
+        }
+        return x;
     }
 }
