@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d2561bc-1c15-4a6e-9f87-5103b4d6548e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/HumanPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/HumanPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IAttacker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IAttacker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IDefender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IDefender.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577370819770</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="méthodes &quot;putResultCombi&quot;, &quot;compare&quot;, &quot;putResponse&quot; et &quot;ResultGame&quot; complétée.">
+      <created>1577371064423</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1577371064423</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -105,7 +116,8 @@
     <MESSAGE value="Méthode &quot; runSelectedMode&quot;&#10; + créatiation méthodes &quot;challengerMode&quot;, &quot;defenderMode&quot;, &quot;duelMode&quot;(vide);&#10;+ Création classes &quot; HumanPlayer&quot; et &quot;IA&quot; (vide)" />
     <MESSAGE value="Class &quot;Main&quot; : permet de lancer l'application, affiche le menu principal et appel la classe &quot;Game&quot;." />
     <MESSAGE value="méthodes &quot;challengerMode&quot;, &quot;defenderMode&quot; et &quot;duelMode&quot; complétée&#10;+ ajout des méthodes &quot;putResultCombi&quot;, &quot;compare&quot;, &quot;putResponse&quot; et &quot;ResultGame&quot;(vide)&#10;+ ajout des méthodes &quot;generateCombi&quot;, &quot;generateProp&quot; et &quot;generateNewProp&quot; dans les classes &quot;IA&quot; et HumanPlayer (vide) + ajout de ces méthodes dans les interfaces &quot;IDefender&quot; et &quot;IAttacker&quot;." />
-    <option name="LAST_COMMIT_MESSAGE" value="méthodes &quot;challengerMode&quot;, &quot;defenderMode&quot; et &quot;duelMode&quot; complétée&#10;+ ajout des méthodes &quot;putResultCombi&quot;, &quot;compare&quot;, &quot;putResponse&quot; et &quot;ResultGame&quot;(vide)&#10;+ ajout des méthodes &quot;generateCombi&quot;, &quot;generateProp&quot; et &quot;generateNewProp&quot; dans les classes &quot;IA&quot; et HumanPlayer (vide) + ajout de ces méthodes dans les interfaces &quot;IDefender&quot; et &quot;IAttacker&quot;." />
+    <MESSAGE value="méthodes &quot;putResultCombi&quot;, &quot;compare&quot;, &quot;putResponse&quot; et &quot;ResultGame&quot; complétée." />
+    <option name="LAST_COMMIT_MESSAGE" value="méthodes &quot;putResultCombi&quot;, &quot;compare&quot;, &quot;putResponse&quot; et &quot;ResultGame&quot; complétée." />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Project_Structure" timestamp="1577313837699">
@@ -116,10 +128,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="292" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1577369871682" />
-    <state x="281" y="115" key="CommitChangelistDialog2" timestamp="1577371026724">
+    <state x="281" y="115" key="CommitChangelistDialog2" timestamp="1577371062907">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="281" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577371026724" />
+    <state x="281" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577371062907" />
     <state x="1115" y="320" key="FileChooserDialogImpl" timestamp="1577313565240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

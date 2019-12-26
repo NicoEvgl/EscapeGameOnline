@@ -5,5 +5,5 @@ public interface IDefender {
 
     int[] generateProp();
 
-    int[] generateNewProp(int[] combination, int[] computerProposition);
+    int[] generateNewProp(int[] combination, int[] firstProposition);
 }

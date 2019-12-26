@@ -1,15 +1,57 @@
 package fr.nicoevgl.escapegameonline;
 
+import java.util.Scanner;
+
 public class HumanPlayer extends Game implements IAttacker, IDefender {
-    public int[] generateCombi() {
-        return new int[0];
-    }
-
+    @Override
     public int[] generateProp() {
-        return new int[0];
+        System.out.println("Saisissez votre proposition...");
+
+        Scanner scProp = new Scanner(System.in);
+        proposition = new  int[combinationSize];
+        try {
+            String combi = Integer.toString(scProp.nextInt());
+
+            for (int i = 0; i < combi.length(); i++) {
+                tabCombi[i] = String.valueOf( combi.charAt(i));
+            }
+
+            for (int i = 0; i < tabCombi.length; i++) {
+                proposition[i] = Integer.parseInt(tabCombi[i]);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Erreur...");
+        }
+        return proposition;
     }
 
-    public int[] generateNewProp(int[] combination, int[] proposition) {
-        return new int[0];
+    @Override
+    public int[] generateCombi() {
+        System.out.println("Saisissez votre combinaison secrète...");
+
+        Scanner scCombi = new Scanner(System.in);
+        combination = new int[combinationSize];
+        try {
+            String combi = Integer.toString(scCombi.nextInt());
+
+            for (int i = 0; i <combi.length(); i++) {
+                tabCombi[i] = String.valueOf(combi.charAt(i));
+            }
+
+            for (int i = 0; i < tabCombi.length; i++) {
+                combination[i] = Integer.parseInt(tabCombi[i]);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Veuillez entrer une combinaison valide");
+        }
+        return combination;
+    }
+
+
+    @Override
+    public int[] generateNewProp(int [] secretCombination, int[] firstProposition) {
+        return null;
     }
 }
