@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d2561bc-1c15-4a6e-9f87-5103b4d6548e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IAttacker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IDefender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/HumanPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -44,6 +44,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="fr.nicoevgl.escapegameonline" />
+    </key>
+  </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
@@ -67,13 +72,29 @@
       <option name="presentableId" value="Default" />
       <updated>1577312999884</updated>
     </task>
+    <task id="LOCAL-00001" summary="Création classe &quot;Game&quot; ( parent class ) + constructeurs&#10;+ add interfaces IAttacker et IDefender.">
+      <created>1577316813196</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577316813196</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Création classe &quot;Game&quot; ( parent class ) + constructeurs&#10;+ add interfaces IAttacker et IDefender." />
+    <option name="LAST_COMMIT_MESSAGE" value="Création classe &quot;Game&quot; ( parent class ) + constructeurs&#10;+ add interfaces IAttacker et IDefender." />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Project_Structure" timestamp="1577313837699">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1577313837699" />
+    <state x="515" y="115" key="CommitChangelistDialog2" timestamp="1577316812009">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="515" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577316812009" />
     <state x="1115" y="320" key="FileChooserDialogImpl" timestamp="1577313565240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
