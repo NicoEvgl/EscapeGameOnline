@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d2561bc-1c15-4a6e-9f87-5103b4d6548e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/HumanPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/HumanPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IAttacker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IAttacker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IDefender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IDefender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profiles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +42,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="C:/Program Files/Java/apache-log4j-1.2.17/log4j-1.2.17.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -108,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577371064423</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="méthodes &quot;generateCombi&quot;, &quot;generateProp&quot; et &quot;generateNewProp&quot; complétée dans les classes &quot;IA&quot; et &quot;HumanPlayer&quot;">
+      <created>1577371324218</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1577371324218</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -117,28 +127,41 @@
     <MESSAGE value="Class &quot;Main&quot; : permet de lancer l'application, affiche le menu principal et appel la classe &quot;Game&quot;." />
     <MESSAGE value="méthodes &quot;challengerMode&quot;, &quot;defenderMode&quot; et &quot;duelMode&quot; complétée&#10;+ ajout des méthodes &quot;putResultCombi&quot;, &quot;compare&quot;, &quot;putResponse&quot; et &quot;ResultGame&quot;(vide)&#10;+ ajout des méthodes &quot;generateCombi&quot;, &quot;generateProp&quot; et &quot;generateNewProp&quot; dans les classes &quot;IA&quot; et HumanPlayer (vide) + ajout de ces méthodes dans les interfaces &quot;IDefender&quot; et &quot;IAttacker&quot;." />
     <MESSAGE value="méthodes &quot;putResultCombi&quot;, &quot;compare&quot;, &quot;putResponse&quot; et &quot;ResultGame&quot; complétée." />
-    <option name="LAST_COMMIT_MESSAGE" value="méthodes &quot;putResultCombi&quot;, &quot;compare&quot;, &quot;putResponse&quot; et &quot;ResultGame&quot; complétée." />
+    <MESSAGE value="méthodes &quot;generateCombi&quot;, &quot;generateProp&quot; et &quot;generateNewProp&quot; complétée dans les classes &quot;IA&quot; et &quot;HumanPlayer&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="méthodes &quot;generateCombi&quot;, &quot;generateProp&quot; et &quot;generateNewProp&quot; complétée dans les classes &quot;IA&quot; et &quot;HumanPlayer&quot;" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="179" key="#Project_Structure" timestamp="1577313837699">
+    <state x="552" y="179" key="#Project_Structure" timestamp="1577382538863">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="179" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1577313837699" />
+    <state x="552" y="179" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1577382538863" />
     <state x="292" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1577369871682">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="292" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1577369871682" />
-    <state x="281" y="115" key="CommitChangelistDialog2" timestamp="1577371062907">
+    <state x="281" y="115" key="CommitChangelistDialog2" timestamp="1577371322562">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="281" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577371062907" />
+    <state x="281" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577371322562" />
     <state x="1115" y="320" key="FileChooserDialogImpl" timestamp="1577313565240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1115" y="320" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1577313565240" />
+    <state x="490" y="176" key="Maven.ArtifactSearchDialog" timestamp="1577403107055">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="176" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577403107055" />
     <state x="815" y="140" key="SettingsEditor" timestamp="1577313579502">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="815" y="140" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1577313579502" />
+    <state x="536" y="213" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1577382812472">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="536" y="213" key="com.intellij.javaee.MapExternalResourceDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577382812472" />
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1577542084283">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1577542084283" />
   </component>
 </project>

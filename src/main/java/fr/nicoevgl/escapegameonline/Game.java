@@ -1,9 +1,19 @@
 package fr.nicoevgl.escapegameonline;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
+
 public class Game {
 
     protected IAttacker attacker;
     protected IDefender defender;
+
+    static Logger logger = LogManager.getLogger(Game.class);
+    InputStream input;
 
     int combinationSize;
     int [] combination;
@@ -18,13 +28,33 @@ public class Game {
     int[] newComputerProposition;
     int[] computerCombination;
     String[] sign;
+    String mode_Developpeur;
+    protected boolean modeDeveloppeur;
+    static boolean modeDev = false;
 
     /**
      * Constructeurs
      */
     public Game() {
-        combinationSize = 4;
-        nbEssaysMax = 4;
+        try {
+            input = new FileInputStream("config.properties");
+            Properties prop = new Properties();
+
+            // load propoerties file //
+
+            prop.load(input);
+            combinationSize = Integer.parseInt(prop.getProperty("taille.combinaison"));
+            nbEssaysMax = Integer.parseInt(prop.getProperty("nombre.essai"));
+            if (modeDev) {
+                mode_Developpeur = "active";
+            }else {
+                mode_Developpeur = (prop.getProperty("mode.developpeur"));
+            }
+        }catch (IOException ex) {
+            combinationSize = 4;
+            logger.error("Problème de téléchargement du fichier .xml");
+            ex.printStackTrace();
+        }
         combination = new int[combinationSize];
         tabCombi = new String[combinationSize];
         response = new String[combinationSize];
@@ -72,6 +102,9 @@ public class Game {
 
     /** Modes de jeu **/
 
+    /**
+     * Mode Duel
+     */
     private void duelMode() {
         int nbEssays = 0;
         boolean resultGame;
@@ -122,6 +155,9 @@ public class Game {
         }while (!resultGame && nbEssays < nbEssaysMax);
     }
 
+    /**
+     * Mode défenseur
+     */
     private void defenderMode() {
         int nbEssays = 0;
         boolean resultGame;
@@ -166,6 +202,9 @@ public class Game {
         }
     }
 
+    /**
+     * Mode Challenger
+     */
     private void challengerMode() {
         int nbEssays = 0;
         boolean resultGame;
@@ -193,8 +232,22 @@ public class Game {
         }
     }
 
+    /**
+     * isModeDeveloppeur verifie si le mode développeur est activé ou non
+     * @return boolean modeDeveloppeur
+     */
+    public boolean isModeDeveloppeur() {
+        modeDeveloppeur = false;
+        if(mode_Developpeur.equals("active"))
+            modeDeveloppeur = true;
+        return modeDeveloppeur;
+    }
 
 
+    /**
+     * putResultCombi affiche les éléments d'un tableau d'entier
+     * @param tableau [] int
+     */
     public void putResultCombi (int[] tableau) {
         for (int i = 0; i < tableau.length; i++) {
             System.out.print(tableau [i]);
@@ -202,6 +255,12 @@ public class Game {
         System.out.print("\n");
     }
 
+    /**
+     * compare deux combinaisons qui prend en paramètre deux tableaux : la combinaison secrète et la proposition.
+     * @param combination [] int
+     * @param proposition [] int
+     * @return String [] response
+     */
     public String[] compare(int[] combination, int[] proposition ) {
         int i = 0;
         do {
@@ -218,6 +277,10 @@ public class Game {
         return response;
     }
 
+    /**
+     * putResponse affiche les éléments d'un tableau de chaine de caractères
+     * @param tableau [] String
+     */
     public void putResponse(String[] tableau) {
         for (int i = 0; i < tableau.length; i++) {
             System.out.print(tableau[i]);
@@ -225,6 +288,12 @@ public class Game {
         System.out.println("\n");
     }
 
+    /**
+     * ResultGame affiche le résultat de la comparaison des deux combinaisons.
+     * si tout le tableau contient " = ", elle retourne true, si non false.
+     * @param response [] String
+     * @return boolean x
+     */
     public boolean ResultGame(String[] response){
         boolean x = true;
 
