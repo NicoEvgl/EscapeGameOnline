@@ -1,13 +1,15 @@
 package fr.nicoevgl.escapegameonline;
 
 import java.util.Scanner;
-import java.util.logging.LogManager;
-import java.util.logging.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Main {
     static Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
+
+
         if (args.length > 0 && args[0].equals("modeDev")) {
             Game.modeDev = true;
         }

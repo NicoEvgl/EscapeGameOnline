@@ -4,8 +4,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
-import java.util.logging.LogManager;
-import java.util.logging.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Game {
 
@@ -37,7 +37,7 @@ public class Game {
      */
     public Game() {
         try {
-            input = new FileInputStream("config.properties");
+            input = new FileInputStream("D:/Documents/DocNico/OpenClassrooms/Projet_3/Escape_Game_ONLINE/src/main/java/fr/nicoevgl/escapegameonline/config.properties");
             Properties prop = new Properties();
 
             // load propoerties file //
@@ -206,7 +206,7 @@ public class Game {
      * Mode Challenger
      */
     private void challengerMode() {
-        int nbEssays = 0;
+        int nbEssays = 0; 
         boolean resultGame;
 
         System.out.println("Trouvrez la combinaison secrète ! " + "\n");
