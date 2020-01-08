@@ -9,7 +9,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         if (args.length > 0 && args[0].equals("modeDev")) {
             Game.modeDev = true;
         }
@@ -18,7 +17,6 @@ public class Main {
         int nbChoice;
         do {
             System.out.println("Bienvenue dans EscapeGame Online !" + "\n");
-
             System.out.println("Choisissez votre mode de jeu");
             System.out.println("1 - Mode Challenger");
             System.out.println("2 - Mode Défenseur");
@@ -32,15 +30,13 @@ public class Main {
             try {
                 nbMode = scMode.nextInt();
             } catch (Exception e) {
-                e.printStackTrace();
-                System.out.println("Veuillez saisir une valeur correcte.");
+                logger.error("Erreur de saisi");
             }
             do {
                 game.runSelectedMode(nbMode);
 
                 Scanner scChoice = new Scanner(System.in);
-                System.out.println("Fin de la partie.");
-                System.out.println("1 : Rejouer  2 : Retour au menu principal  3 : Quitter");
+                System.out.println("1 : Rejouer  2 : Retour au menu principal  3 : Fermer l'application");
                 nbChoice = scChoice.nextInt();
                 switch (nbChoice) {
                     case 1:

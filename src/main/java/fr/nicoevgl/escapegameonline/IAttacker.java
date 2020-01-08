@@ -5,5 +5,5 @@ public interface IAttacker {
 
     int[] generateProp();
 
-    int[] generateNewProp(int[] combination, int[] firstProposition);
+    int[] generateNewProp(int[] secretCombination, int[] firstProposition);
 }

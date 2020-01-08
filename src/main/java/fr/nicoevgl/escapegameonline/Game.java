@@ -8,12 +8,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Game {
+    static Logger logger = LogManager.getLogger(Game.class);
+    InputStream input;
 
     protected IAttacker attacker;
     protected IDefender defender;
-
-    static Logger logger = LogManager.getLogger(Game.class);
-    InputStream input;
 
     int combinationSize;
     int [] combination;
@@ -37,7 +36,7 @@ public class Game {
      */
     public Game() {
         try {
-            input = new FileInputStream("D:/Documents/DocNico/OpenClassrooms/Projet_3/Escape_Game_ONLINE/src/main/java/fr/nicoevgl/escapegameonline/config.properties");
+            input = new FileInputStream("src/main/resources/config.properties");
             Properties prop = new Properties();
 
             // load propoerties file //
@@ -52,7 +51,7 @@ public class Game {
             }
         }catch (IOException ex) {
             combinationSize = 4;
-            logger.error("Problème de téléchargement du fichier .xml");
+            logger.error("Problème de téléchargement du fichier de configuration");
             ex.printStackTrace();
         }
         combination = new int[combinationSize];
@@ -92,7 +91,7 @@ public class Game {
                 duelMode();
                 break;
             case 4:
-                System.out.println("Etes - vous sûr ?");
+                System.out.println("Vous avez choisis de quitter le jeu.");
                 break;
             default:
                 System.out.println("Ce mode de jeu n'existe pas.");
@@ -153,6 +152,7 @@ public class Game {
             }
             resultGame = ResultGame(response);
         }while (!resultGame && nbEssays < nbEssaysMax);
+        System.out.println("Fin de la partie.");
     }
 
     /**
@@ -181,7 +181,6 @@ public class Game {
         }else {
             do {
                 if (nbEssays <=1) {
-                    System.out.println("aaaa");
                     computerProposition = attacker.generateNewProp(combination, proposition);
                 }else {
                     computerProposition = attacker.generateNewProp(combination, computerProposition);
@@ -200,19 +199,26 @@ public class Game {
                 System.out.println("Sniiif ! J'ai perdu... Je n'ai pas trouvé la combinaison...");
             }
         }
+        System.out.println("Fin de la partie.");
     }
 
     /**
      * Mode Challenger
      */
     private void challengerMode() {
+        System.out.println( "Règle de jeux " );
+        System.out.println( "Le système définit une combinaison de "+combinationSize +" chiffres aleatoirement... \n" +
+                "A vous de trouvez cette combinaison ! " );
+        System.out.println( "Attention vous n'avez que "+ nbEssaysMax + " essai! " );
+
         int nbEssays = 0; 
         boolean resultGame;
 
-        System.out.println("Trouvrez la combinaison secrète ! " + "\n");
         combination = defender.generateCombi();
-        System.out.print("La combinaison générée par le défenseur est : ");
-        putResultCombi(combination);
+        if (isModeDeveloppeur()) {
+            System.out.print("La combinaison générée par le système est : ");
+            putResultCombi(combination);
+        }
         do {
             proposition = attacker.generateProp();
             System.out.print("Proposition : ");
@@ -230,6 +236,7 @@ public class Game {
             System.out.println("La combinaison était : " );
             putResultCombi(combination);
         }
+        System.out.println("Fin de la partie.");
     }
 
     /**

@@ -20,8 +20,9 @@ public class HumanPlayer extends Game implements IAttacker, IDefender {
                 proposition[i] = Integer.parseInt(tabCombi[i]);
             }
         } catch (Exception e) {
-            e.printStackTrace();
-            System.out.println("Erreur...");
+            logger.error("Erreur de saisie");
+            logger.error("Saisir uniquement des valeurs, aucun caractère spécial ni aucunes chaines de caractères " +
+                    "ne sont valables");
         }
         return proposition;
     }

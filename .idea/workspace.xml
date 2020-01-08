@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d2561bc-1c15-4a6e-9f87-5103b4d6548e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/java.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/all.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/Game.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/HumanPlayer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/IA.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/IAttacker.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/IDefender.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/HumanPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/HumanPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IAttacker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IAttacker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IDefender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IDefender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +65,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Documents\DocNico\OpenClassrooms\Projet_3\Escape_Game_ONLINE\src\main\resources" />
       <recent name="D:\Documents\DocNico\OpenClassrooms\Projet_3\Escape_Game_ONLINE\src\main\java\fr\nicoevgl\escapegameonline" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
@@ -144,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577371324218</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add fichier log4j.xml + import log in main">
+      <created>1578103117212</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1578103117212</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -154,7 +174,8 @@
     <MESSAGE value="méthodes &quot;challengerMode&quot;, &quot;defenderMode&quot; et &quot;duelMode&quot; complétée&#10;+ ajout des méthodes &quot;putResultCombi&quot;, &quot;compare&quot;, &quot;putResponse&quot; et &quot;ResultGame&quot;(vide)&#10;+ ajout des méthodes &quot;generateCombi&quot;, &quot;generateProp&quot; et &quot;generateNewProp&quot; dans les classes &quot;IA&quot; et HumanPlayer (vide) + ajout de ces méthodes dans les interfaces &quot;IDefender&quot; et &quot;IAttacker&quot;." />
     <MESSAGE value="méthodes &quot;putResultCombi&quot;, &quot;compare&quot;, &quot;putResponse&quot; et &quot;ResultGame&quot; complétée." />
     <MESSAGE value="méthodes &quot;generateCombi&quot;, &quot;generateProp&quot; et &quot;generateNewProp&quot; complétée dans les classes &quot;IA&quot; et &quot;HumanPlayer&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="méthodes &quot;generateCombi&quot;, &quot;generateProp&quot; et &quot;generateNewProp&quot; complétée dans les classes &quot;IA&quot; et &quot;HumanPlayer&quot;" />
+    <MESSAGE value="Add fichier log4j.xml + import log in main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add fichier log4j.xml + import log in main" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Project_Structure" timestamp="1577736513105">
@@ -165,10 +186,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="292" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1577369871682" />
-    <state x="281" y="115" key="CommitChangelistDialog2" timestamp="1578103056024">
+    <state x="281" y="115" key="CommitChangelistDialog2" timestamp="1578103114208">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="281" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578103056024" />
+    <state x="281" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578103114208" />
     <state x="1089" y="281" key="DetectedRootsChooserDialog" timestamp="1577736395195">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -177,22 +198,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1115" y="320" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1577736391405" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1578077321842">
+    <state width="904" height="288" key="GridCell.Tab.0.bottom" timestamp="1578492968045">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578077321842" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1578077321842">
+    <state width="904" height="288" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578492968045" />
+    <state width="904" height="288" key="GridCell.Tab.0.center" timestamp="1578492968045">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578077321842" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1578077321842">
+    <state width="904" height="288" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578492968045" />
+    <state width="904" height="288" key="GridCell.Tab.0.left" timestamp="1578492968045">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578077321842" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1578077321842">
+    <state width="904" height="288" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578492968045" />
+    <state width="904" height="288" key="GridCell.Tab.0.right" timestamp="1578492968045">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578077321842" />
+    <state width="904" height="288" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578492968045" />
     <state x="490" y="176" key="Maven.ArtifactSearchDialog" timestamp="1577736485025">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
