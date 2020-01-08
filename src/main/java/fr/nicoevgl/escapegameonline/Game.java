@@ -95,7 +95,6 @@ public class Game {
                 break;
             default:
                 System.out.println("Ce mode de jeu n'existe pas.");
-                break;
         }
     }
 
@@ -105,14 +104,20 @@ public class Game {
      * Mode Duel
      */
     private void duelMode() {
+        logger.info("Lancement du mode Duel");
         int nbEssays = 0;
         boolean resultGame;
 
-        System.out.println("Trouvrez la combinaison secrète et défendez la votre ! " + "\n");
+        System.out.println("Règles du jeu :");
+        System.out.println("Vous jouez à tour de rôle avec l'IA, le premier à découvrir la combinaison de l'autre remporte la partie. ");
+        System.out.println("N'oubliez pas, vous n'avez que " + nbEssaysMax + " essais !" + "\n");
 
         computerCombination = defender.generateCombi();
-        System.out.print("La combinaison générée par le défenseur est : ");
-        putResultCombi(computerCombination);
+        if (isModeDeveloppeur()) {
+            logger.info("Mode développeur activé");
+            System.out.print("La combinaison générée par le système est : " + "\n");
+            putResultCombi(computerCombination);
+        }
         combination = attacker.generateCombi();
         System.out.println("Votre combinaison est : ");
         putResultCombi(combination);
@@ -126,18 +131,18 @@ public class Game {
             putResponse(response);
             resultGame = ResultGame(response);
             if (resultGame == true) {
-                System.out.println("Bravo ! Vous avez trouvez la combinaison de l'IA !");
+                System.out.println("Bravo ! Vous avez trouvé la combinaison de l'IA ! Vous remportez la partie ! " + " \n");
                 break;
             } else {
-                System.out.println("Raté...");
+                System.out.println("Vous n'avez pas trouvé la combinaison de l'IA" + "\n");
             }
             System.out.println("L'IA pense a une combinaison ...");
             if (nbEssays <= 1) {
                 computerProposition = defender.generateProp();
-                System.out.print("proposition initiale de l'IA : ");
+                System.out.print("Proposition de l'IA : ");
             } else {
                 computerProposition = defender.generateNewProp(combination, computerProposition);
-                System.out.println("proposition IA " + nbEssays);
+                System.out.println("Proposition IA ");
             }
             putResultCombi(computerProposition);
             response = compare(combination, computerProposition);
@@ -145,32 +150,40 @@ public class Game {
             putResponse(response);
             resultGame = ResultGame(response);
             if (resultGame == true) {
-                System.out.println("HaHa ! J'ai réussis à trouver votre combinaison !");
+                System.out.println("Perdu ! L'IA a était plus rapide et a découvert votre combinaison !");
                 break;
             } else {
-                System.out.println("Je n'ai pas trouvé votre combinaison.;.");
+                System.out.println("L'IA n'as pas trouvé votre combinaison..." + "\n");
             }
             resultGame = ResultGame(response);
         }while (!resultGame && nbEssays < nbEssaysMax);
+        if (nbEssays == nbEssaysMax || resultGame == true) {
+            System.out.println("La combinaison de l'IA était : ");
+            putResultCombi(computerCombination);
+        }
         System.out.println("Fin de la partie.");
+        logger.info("Fin de la partie");
     }
 
     /**
      * Mode défenseur
      */
     private void defenderMode() {
+        logger.info("Lancement du mode Défenseur");
+
         int nbEssays = 0;
         boolean resultGame;
 
-        System.out.println("L'IA doit décovurir votre combinaison" + "\n");
-
+        System.out.println("Règles du jeu :");
+        System.out.println("Vous définissez une combinaison à " + combinationSize + " chiffres. ");
+        System.out.println("L'IA a " + nbEssaysMax + " essais pour décovurir votre combinaison" + "\n");
         combination = defender.generateCombi();
         System.out.println("Votre combinaison est : ");
         putResultCombi(combination);
-        System.out.println("L'IA pense a une combinaison ...");
+        System.out.println("L'IA pense a une combinaison ..." + "\n");
         proposition = attacker.generateProp();
         response = compare(combination, proposition);
-        System.out.print("proposition initiale de l'IA : ");
+        System.out.print("Proposition de l'IA :  ");
         putResultCombi(proposition);
         System.out.print("Réponse : ");
         putResponse(response);
@@ -186,7 +199,7 @@ public class Game {
                     computerProposition = attacker.generateNewProp(combination, computerProposition);
                 }
                 response = compare(combination, computerProposition);
-                System.out.println("proposition IA " + nbEssays);
+                System.out.println("Proposition de l'IA ");
                 putResultCombi(computerProposition);
                 System.out.print("Réponse : ");
                 putResponse(response);
@@ -200,22 +213,25 @@ public class Game {
             }
         }
         System.out.println("Fin de la partie.");
+        logger.info("Fin de la partie");
     }
 
     /**
      * Mode Challenger
      */
     private void challengerMode() {
-        System.out.println( "Règle de jeux " );
-        System.out.println( "Le système définit une combinaison de "+combinationSize +" chiffres aleatoirement... \n" +
-                "A vous de trouvez cette combinaison ! " );
-        System.out.println( "Attention vous n'avez que "+ nbEssaysMax + " essai! " );
+        logger.info("Lancement du mode Challenger");
 
-        int nbEssays = 0; 
+        int nbEssays = 0;
         boolean resultGame;
 
+        System.out.println("Règle du jeu : ");
+        System.out.println("Le système définit une combinaison de "+combinationSize +" chiffres aleatoirement ");
+        System.out.println("A vous de trouver cette combinaison !");
+        System.out.println("Attention vous n'avez que "+ nbEssaysMax + " essais !" + "\n");
         combination = defender.generateCombi();
         if (isModeDeveloppeur()) {
+            logger.info("Mode développeur activé");
             System.out.print("La combinaison générée par le système est : ");
             putResultCombi(combination);
         }
@@ -237,6 +253,7 @@ public class Game {
             putResultCombi(combination);
         }
         System.out.println("Fin de la partie.");
+        logger.info("Fin de la partie");
     }
 
     /**

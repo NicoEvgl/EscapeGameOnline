@@ -2,24 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d2561bc-1c15-4a6e-9f87-5103b4d6548e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/all.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/Game.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/HumanPlayer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/IA.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/IAttacker.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/IDefender.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/all.log" beforeDir="false" afterPath="$PROJECT_DIR$/all.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/HumanPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/HumanPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IAttacker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IAttacker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IDefender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IDefender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/HumanPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/HumanPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j2.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +37,16 @@
     </option>
   </component>
   <component name="ProjectId" id="1VUgHTTZFP589FRD81VtkzR9QTY" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -66,6 +61,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Documents\DocNico\OpenClassrooms\Projet_3\Escape_Game_ONLINE\src\main\resources" />
+      <recent name="D:\Documents\DocNico\OpenClassrooms\Projet_3\Escape_Game_ONLINE" />
       <recent name="D:\Documents\DocNico\OpenClassrooms\Projet_3\Escape_Game_ONLINE\src\main\java\fr\nicoevgl\escapegameonline" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
@@ -164,10 +160,18 @@
       <option name="project" value="LOCAL" />
       <updated>1578103117212</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Correction fichier log4j2.xml + correction import Logmanager et FileInputStream&#10;+ avancement log&#10;+ déplacement system.out.println(&quot;Fin de partie&quot;) dans chaque mode de jeu. &#10;+ dans challengerMode : ajout règles du jeu  &amp; codition pour le mode developpeur">
+      <created>1578503879526</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1578503879526</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Création classe &quot;Game&quot; ( parent class ) + constructeurs&#10;+ add interfaces IAttacker et IDefender." />
     <MESSAGE value="Méthode &quot; runSelectedMode&quot;&#10; + créatiation méthodes &quot;challengerMode&quot;, &quot;defenderMode&quot;, &quot;duelMode&quot;(vide);&#10;+ Création classes &quot; HumanPlayer&quot; et &quot;IA&quot; (vide)" />
     <MESSAGE value="Class &quot;Main&quot; : permet de lancer l'application, affiche le menu principal et appel la classe &quot;Game&quot;." />
@@ -175,21 +179,22 @@
     <MESSAGE value="méthodes &quot;putResultCombi&quot;, &quot;compare&quot;, &quot;putResponse&quot; et &quot;ResultGame&quot; complétée." />
     <MESSAGE value="méthodes &quot;generateCombi&quot;, &quot;generateProp&quot; et &quot;generateNewProp&quot; complétée dans les classes &quot;IA&quot; et &quot;HumanPlayer&quot;" />
     <MESSAGE value="Add fichier log4j.xml + import log in main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add fichier log4j.xml + import log in main" />
+    <MESSAGE value="Correction fichier log4j2.xml + correction import Logmanager et FileInputStream&#10;+ avancement log&#10;+ déplacement system.out.println(&quot;Fin de partie&quot;) dans chaque mode de jeu. &#10;+ dans challengerMode : ajout règles du jeu  &amp; codition pour le mode developpeur" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction fichier log4j2.xml + correction import Logmanager et FileInputStream&#10;+ avancement log&#10;+ déplacement system.out.println(&quot;Fin de partie&quot;) dans chaque mode de jeu. &#10;+ dans challengerMode : ajout règles du jeu  &amp; codition pour le mode developpeur" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="179" key="#Project_Structure" timestamp="1577736513105">
+    <state x="552" y="179" key="#Project_Structure" timestamp="1578511925476">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="179" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1577736513105" />
+    <state x="552" y="179" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1578511925476" />
     <state x="292" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1577369871682">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="292" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1577369871682" />
-    <state x="281" y="115" key="CommitChangelistDialog2" timestamp="1578103114208">
+    <state x="281" y="115" key="CommitChangelistDialog2" timestamp="1578503877894">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="281" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578103114208" />
+    <state x="281" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578503877894" />
     <state x="1089" y="281" key="DetectedRootsChooserDialog" timestamp="1577736395195">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -198,22 +203,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1115" y="320" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1577736391405" />
-    <state width="904" height="288" key="GridCell.Tab.0.bottom" timestamp="1578492968045">
+    <state width="1877" height="288" key="GridCell.Tab.0.bottom" timestamp="1578513620248">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="904" height="288" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578492968045" />
-    <state width="904" height="288" key="GridCell.Tab.0.center" timestamp="1578492968045">
+    <state width="1877" height="288" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578513620248" />
+    <state width="1877" height="288" key="GridCell.Tab.0.center" timestamp="1578513620248">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="904" height="288" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578492968045" />
-    <state width="904" height="288" key="GridCell.Tab.0.left" timestamp="1578492968045">
+    <state width="1877" height="288" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578513620248" />
+    <state width="1877" height="288" key="GridCell.Tab.0.left" timestamp="1578513620248">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="904" height="288" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578492968045" />
-    <state width="904" height="288" key="GridCell.Tab.0.right" timestamp="1578492968045">
+    <state width="1877" height="288" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578513620248" />
+    <state width="1877" height="288" key="GridCell.Tab.0.right" timestamp="1578513620248">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="904" height="288" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578492968045" />
+    <state width="1877" height="288" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578513620248" />
     <state x="490" y="176" key="Maven.ArtifactSearchDialog" timestamp="1577736485025">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
