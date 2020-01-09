@@ -103,7 +103,7 @@ public class Game {
     /**
      * Mode Duel
      */
-    private void duelMode() {
+    public void duelMode() {
         logger.info("Lancement du mode Duel");
         int nbEssays = 0;
         boolean resultGame;
@@ -168,7 +168,7 @@ public class Game {
     /**
      * Mode défenseur
      */
-    private void defenderMode() {
+    public void defenderMode() {
         logger.info("Lancement du mode Défenseur");
 
         int nbEssays = 0;
@@ -219,7 +219,7 @@ public class Game {
     /**
      * Mode Challenger
      */
-    private void challengerMode() {
+    public void challengerMode() {
         logger.info("Lancement du mode Challenger");
 
         int nbEssays = 0;
@@ -300,7 +300,6 @@ public class Game {
         }while (i < 4);
         return response;
     }
-
     /**
      * putResponse affiche les éléments d'un tableau de chaine de caractères
      * @param tableau [] String

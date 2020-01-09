@@ -1,2 +1,10 @@
-2020-01-08 21:00:21.269 [main] INFO  fr.nicoevgl.escapegameonline.Main - Démarrage du jeu
-2020-01-08 21:00:29.513 [main] INFO  fr.nicoevgl.escapegameonline.Main - Fermeture de l'application
+2020-01-09 03:02:26.005 [main] INFO  fr.nicoevgl.escapegameonline.Main - Démarrage du jeu
+2020-01-09 03:03:14.431 [main] ERROR fr.nicoevgl.escapegameonline.Main - Erreur de saisi
+2020-01-09 03:03:14.431 [main] ERROR fr.nicoevgl.escapegameonline.Main - Saisir uniquement des valeurs, aucun caractère spécial ni aucune chaine de caractères n'est valable
+2020-01-09 03:03:25.200 [main] ERROR fr.nicoevgl.escapegameonline.Main - Erreur de saisi
+2020-01-09 03:03:25.200 [main] ERROR fr.nicoevgl.escapegameonline.Main - Saisir uniquement des valeurs, aucun caractère spécial ni aucune chaine de caractères n'est valable
+2020-01-09 03:03:44.142 [main] ERROR fr.nicoevgl.escapegameonline.Main - Erreur de saisi
+2020-01-09 03:03:44.142 [main] ERROR fr.nicoevgl.escapegameonline.Main - Saisir uniquement des valeurs, aucun caractère spécial ni aucune chaine de caractères n'est valable
+2020-01-09 03:04:19.505 [main] ERROR fr.nicoevgl.escapegameonline.Main - Erreur de saisi
+2020-01-09 03:04:19.505 [main] ERROR fr.nicoevgl.escapegameonline.Main - Saisir uniquement des valeurs, aucun caractère spécial ni aucune chaine de caractères n'est valable
+2020-01-09 03:04:28.971 [main] INFO  fr.nicoevgl.escapegameonline.Main - Fermeture de l'application
