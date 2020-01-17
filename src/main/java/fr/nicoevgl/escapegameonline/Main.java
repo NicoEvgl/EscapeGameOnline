@@ -1,6 +1,7 @@
 package fr.nicoevgl.escapegameonline;
 
 import java.util.Scanner;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -40,24 +41,25 @@ public class Main {
                 System.out.println("1 : Recommencer  2 : Retour au menu principal  3 : Fermer l'application");
                 try {
                     nbChoice = scChoice.nextInt();
-                }catch (Exception e) {
+                } catch (Exception e) {
                     logger.error("Erreur de saisi");
                     logger.error("Saisir uniquement des valeurs, aucun caractère spécial ni aucune chaine de caractères n'est valable");
                 }
-                    switch (nbChoice) {
-                        case 1:
-                            break;
-                        case 2:
-                            System.out.println("Retour au menu principal..." + "\n");
-                            break;
-                        case 3:
-                            System.out.println("Au revoir...");
-                            break;
-                        default:
-                            System.out.println("Veuillez saisir une valeur correcte...");
-                            nbChoice = 2;
-                    }
-            }while (nbChoice == 1);
+                switch (nbChoice) {
+                    case 1:
+                        break;
+                    case 2:
+                        System.out.println("Retour au menu principal..." + "\n");
+                        logger.trace("Retour au menu principal");
+                        break;
+                    case 3:
+                        System.out.println("Au revoir...");
+                        break;
+                    default:
+                        System.out.println("Veuillez saisir une valeur correcte...");
+                        nbChoice = 2;
+                }
+            } while (nbChoice == 1);
         } while (nbChoice == 2);
         logger.info("Fermeture de l'application");
     }

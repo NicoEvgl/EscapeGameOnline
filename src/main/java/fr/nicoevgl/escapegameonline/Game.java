@@ -4,9 +4,13 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * Classe mère
+ */
 public class Game {
     static Logger logger = LogManager.getLogger(Game.class);
     InputStream input;
@@ -14,21 +18,20 @@ public class Game {
     protected IAttacker attacker;
     protected IDefender defender;
 
-    int combinationSize;
-    int [] combination;
+    int combinationSize;                // Taille de la combinaison //
+    int[] combination;                  // tableau combinaisons //
     String[] tabCombi;
-    int[] proposition;
-    String[] response;
-    int nbEssaysMax;
-    String[] tableau;
-    int[] min = {0,0,0,0};
-    int[] max = {9,9,9,9};
-    int[] computerProposition;
-    int[] newComputerProposition;
-    int[] computerCombination;
-    String[] sign;
-    String mode_Developpeur;
-    protected boolean modeDeveloppeur;
+    int[] proposition;                  // tableau proposition*/
+    String[] response;                  // réponse à la combinaison ( +, - ou = ) //
+    int nbEssaysMax;                    // nombre d'essais maximum //
+    String[] tableau;                   // tableau de caractères //
+    int[] min = {0, 0, 0, 0};           // valeurs minimales d'une combinaison //
+    int[] max = {9, 9, 9, 9};           // valeurs maximales d'une combinaison //
+    int[] computerProposition;          // première combinaison proposées par l'IA //
+    int[] newComputerProposition;       // nouvelles combinaisons proposées par l'IA //
+    int[] computerCombination;          // combinaison générées automatiquement par l'IA //
+    String mode_Developpeur;            // mode développeur (activé ou non) //
+    protected boolean modeDeveloppeur;  // boolean mode développeur //
     static boolean modeDev = false;
 
     /**
@@ -46,13 +49,12 @@ public class Game {
             nbEssaysMax = Integer.parseInt(prop.getProperty("nombre.essai"));
             if (modeDev) {
                 mode_Developpeur = "active";
-            }else {
+            } else {
                 mode_Developpeur = (prop.getProperty("mode.developpeur"));
             }
-        }catch (IOException ex) {
+        } catch (IOException ex) {
             combinationSize = 4;
             logger.error("Problème de téléchargement du fichier de configuration");
-            ex.printStackTrace();
         }
         combination = new int[combinationSize];
         tabCombi = new String[combinationSize];
@@ -62,16 +64,16 @@ public class Game {
         computerProposition = new int[combinationSize];
         newComputerProposition = new int[combinationSize];
         computerCombination = new int[combinationSize];
-        sign = new String[combinationSize];
     }
 
     /**
      * Méthode qui permet de lancer le mode de jeu selectionné par le joueur.
+     *
      * @param nbMode : mode de jeu saisi par le joueur.
      */
-    public void runSelectedMode (int nbMode) {
+    public void runSelectedMode(int nbMode) {
 
-        switch (nbMode){
+        switch (nbMode) {
             case 1:
                 System.out.println("Vous avez choisi le mode Challenger.");
                 attacker = new HumanPlayer();
@@ -104,7 +106,7 @@ public class Game {
      * Mode Duel
      */
     public void duelMode() {
-        logger.info("Lancement du mode Duel");
+        logger.trace("Lancement du mode Duel");
         int nbEssays = 0;
         boolean resultGame;
 
@@ -156,20 +158,20 @@ public class Game {
                 System.out.println("L'IA n'as pas trouvé votre combinaison..." + "\n");
             }
             resultGame = ResultGame(response);
-        }while (!resultGame && nbEssays < nbEssaysMax);
+        } while (!resultGame && nbEssays < nbEssaysMax);
         if (nbEssays == nbEssaysMax || resultGame == true) {
             System.out.println("La combinaison de l'IA était : ");
             putResultCombi(computerCombination);
         }
         System.out.println("Fin de la partie.");
-        logger.info("Fin de la partie");
+        logger.trace("Fin de la partie");
     }
 
     /**
      * Mode défenseur
      */
     public void defenderMode() {
-        logger.info("Lancement du mode Défenseur");
+        logger.trace("Lancement du mode Défenseur");
 
         int nbEssays = 0;
         boolean resultGame;
@@ -189,13 +191,13 @@ public class Game {
         putResponse(response);
         resultGame = ResultGame(response);
         nbEssays++;
-        if (resultGame == true){
+        if (resultGame == true) {
             System.out.println("Trop facile ! J'ai trouvé votre combinaison du premier coup !");
-        }else {
+        } else {
             do {
-                if (nbEssays <=1) {
+                if (nbEssays <= 1) {
                     computerProposition = attacker.generateNewProp(combination, proposition);
-                }else {
+                } else {
                     computerProposition = attacker.generateNewProp(combination, computerProposition);
                 }
                 response = compare(combination, computerProposition);
@@ -205,30 +207,30 @@ public class Game {
                 putResponse(response);
                 resultGame = ResultGame(response);
                 nbEssays++;
-            }while (!resultGame && nbEssays < nbEssaysMax);
+            } while (!resultGame && nbEssays < nbEssaysMax);
             if (resultGame == true) {
                 System.out.println("HaHa ! J'ai réussis à trouver votre combinaison !");
-            }else {
+            } else {
                 System.out.println("Sniiif ! J'ai perdu... Je n'ai pas trouvé la combinaison...");
             }
         }
         System.out.println("Fin de la partie.");
-        logger.info("Fin de la partie");
+        logger.trace("Fin de la partie");
     }
 
     /**
      * Mode Challenger
      */
     public void challengerMode() {
-        logger.info("Lancement du mode Challenger");
+        logger.trace("Lancement du mode Challenger");
 
         int nbEssays = 0;
         boolean resultGame;
 
         System.out.println("Règle du jeu : ");
-        System.out.println("Le système définit une combinaison de "+combinationSize +" chiffres aleatoirement ");
+        System.out.println("Le système définit une combinaison de " + combinationSize + " chiffres aleatoirement ");
         System.out.println("A vous de trouver cette combinaison !");
-        System.out.println("Attention vous n'avez que "+ nbEssaysMax + " essais !" + "\n");
+        System.out.println("Attention vous n'avez que " + nbEssaysMax + " essais !" + "\n");
         combination = defender.generateCombi();
         if (isModeDeveloppeur()) {
             logger.info("Mode développeur activé");
@@ -244,25 +246,26 @@ public class Game {
             putResponse(response);
             resultGame = ResultGame(response);
             nbEssays++;
-        }while (!resultGame && nbEssays < nbEssaysMax );
+        } while (!resultGame && nbEssays < nbEssaysMax);
         if (resultGame == true) {
             System.out.println("Bravo ! Vous avez trouvez la combinaison de l'IA !");
-        }else {
+        } else {
             System.out.println("Perdu ! La combinaison de l'IA n'a pas était découverte");
-            System.out.println("La combinaison était : " );
+            System.out.println("La combinaison était : ");
             putResultCombi(combination);
         }
         System.out.println("Fin de la partie.");
-        logger.info("Fin de la partie");
+        logger.trace("Fin de la partie");
     }
 
     /**
      * isModeDeveloppeur verifie si le mode développeur est activé ou non
+     *
      * @return boolean modeDeveloppeur
      */
     public boolean isModeDeveloppeur() {
         modeDeveloppeur = false;
-        if(mode_Developpeur.equals("active"))
+        if (mode_Developpeur.equals("active"))
             modeDeveloppeur = true;
         return modeDeveloppeur;
     }
@@ -270,22 +273,24 @@ public class Game {
 
     /**
      * putResultCombi affiche les éléments d'un tableau d'entier
+     *
      * @param tableau [] int
      */
-    public void putResultCombi (int[] tableau) {
+    public void putResultCombi(int[] tableau) {
         for (int i = 0; i < tableau.length; i++) {
-            System.out.print(tableau [i]);
+            System.out.print(tableau[i]);
         }
         System.out.print("\n");
     }
 
     /**
      * compare deux combinaisons qui prend en paramètre deux tableaux : la combinaison secrète et la proposition.
+     *
      * @param combination [] int
      * @param proposition [] int
      * @return String [] response
      */
-    public String[] compare(int[] combination, int[] proposition ) {
+    public String[] compare(int[] combination, int[] proposition) {
         int i = 0;
         do {
             if (combination[i] < proposition[i]) {
@@ -297,11 +302,13 @@ public class Game {
             }
 
             i++;
-        }while (i < 4);
+        } while (i < 4);
         return response;
     }
+
     /**
      * putResponse affiche les éléments d'un tableau de chaine de caractères
+     *
      * @param tableau [] String
      */
     public void putResponse(String[] tableau) {
@@ -314,10 +321,11 @@ public class Game {
     /**
      * ResultGame affiche le résultat de la comparaison des deux combinaisons.
      * si tout le tableau contient " = ", elle retourne true, si non false.
+     *
      * @param response [] String
      * @return boolean x
      */
-    public boolean ResultGame(String[] response){
+    public boolean ResultGame(String[] response) {
         boolean x = true;
 
         for (int i = 0; i < response.length; i++) {

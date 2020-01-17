@@ -1,10 +1,4 @@
-2020-01-09 03:02:26.005 [main] INFO  fr.nicoevgl.escapegameonline.Main - Démarrage du jeu
-2020-01-09 03:03:14.431 [main] ERROR fr.nicoevgl.escapegameonline.Main - Erreur de saisi
-2020-01-09 03:03:14.431 [main] ERROR fr.nicoevgl.escapegameonline.Main - Saisir uniquement des valeurs, aucun caractère spécial ni aucune chaine de caractères n'est valable
-2020-01-09 03:03:25.200 [main] ERROR fr.nicoevgl.escapegameonline.Main - Erreur de saisi
-2020-01-09 03:03:25.200 [main] ERROR fr.nicoevgl.escapegameonline.Main - Saisir uniquement des valeurs, aucun caractère spécial ni aucune chaine de caractères n'est valable
-2020-01-09 03:03:44.142 [main] ERROR fr.nicoevgl.escapegameonline.Main - Erreur de saisi
-2020-01-09 03:03:44.142 [main] ERROR fr.nicoevgl.escapegameonline.Main - Saisir uniquement des valeurs, aucun caractère spécial ni aucune chaine de caractères n'est valable
-2020-01-09 03:04:19.505 [main] ERROR fr.nicoevgl.escapegameonline.Main - Erreur de saisi
-2020-01-09 03:04:19.505 [main] ERROR fr.nicoevgl.escapegameonline.Main - Saisir uniquement des valeurs, aucun caractère spécial ni aucune chaine de caractères n'est valable
-2020-01-09 03:04:28.971 [main] INFO  fr.nicoevgl.escapegameonline.Main - Fermeture de l'application
+2020-01-17 16:34:35.486 [main] INFO  fr.nicoevgl.escapegameonline.Main - Démarrage du jeu
+2020-01-17 16:34:38.063 [main] TRACE fr.nicoevgl.escapegameonline.Game - Lancement du mode Défenseur
+2020-01-17 16:34:40.564 [main] TRACE fr.nicoevgl.escapegameonline.Game - Fin de la partie
+2020-01-17 16:48:55.546 [main] INFO  fr.nicoevgl.escapegameonline.Main - Fermeture de l'application

@@ -24,16 +24,17 @@ public class IA extends Game implements IAttacker, IDefender {
 
     @Override
     public int[] generateNewProp(int[] secretCombination, int[] firstProposition) {
+        Random rdProp2 = new Random();
 
-        for (int i = 0; i < secretCombination.length; i++ ) {
-            Random rdProp2 = new Random();
+        for (int i = 0; i < secretCombination.length; i++) {
+
             if (secretCombination[i] < firstProposition[i]) {
                 this.max[i] = firstProposition[i];
-                proposition[i] = this.max[i] - rdProp2.nextInt(this.max[i]);
+                proposition[i] = rdProp2.nextInt(this.max[i]);
                 response[i] = "-";
             } else if (secretCombination[i] > firstProposition[i]) {
                 this.min[i] = firstProposition[i];
-                proposition[i] = this.min[i] + rdProp2.nextInt((this.max[i] + 1) - this.min[i]);
+                proposition[i] = this.min[i] + rdProp2.nextInt(this.max[i] + 1) - this.min[i];
                 response[i] = "+";
             } else {
                 response[i] = "=";

@@ -8,12 +8,12 @@ public class HumanPlayer extends Game implements IAttacker, IDefender {
         System.out.println("Saisissez votre proposition...");
 
         Scanner scProp = new Scanner(System.in);
-        proposition = new  int[combinationSize];
+        proposition = new int[combinationSize];
         try {
             String combi = Integer.toString(scProp.nextInt());
 
             for (int i = 0; i < combi.length(); i++) {
-                tabCombi[i] = String.valueOf( combi.charAt(i));
+                tabCombi[i] = String.valueOf(combi.charAt(i));
             }
 
             for (int i = 0; i < tabCombi.length; i++) {
@@ -37,7 +37,7 @@ public class HumanPlayer extends Game implements IAttacker, IDefender {
         try {
             String combi = Integer.toString(scCombi.nextInt());
 
-            for (int i = 0; i <combi.length(); i++) {
+            for (int i = 0; i < combi.length(); i++) {
                 tabCombi[i] = String.valueOf(combi.charAt(i));
             }
 
@@ -55,7 +55,7 @@ public class HumanPlayer extends Game implements IAttacker, IDefender {
 
 
     @Override
-    public int[] generateNewProp(int [] secretCombination, int[] firstProposition) {
+    public int[] generateNewProp(int[] secretCombination, int[] firstProposition) {
         return null;
     }
 }
