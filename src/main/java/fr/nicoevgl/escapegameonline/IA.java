@@ -29,12 +29,12 @@ public class IA extends Game implements IAttacker, IDefender {
         for (int i = 0; i < secretCombination.length; i++) {
 
             if (secretCombination[i] < firstProposition[i]) {
-                this.max[i] = firstProposition[i];
+                max[i] = firstProposition[i];
                 proposition[i] = rdProp2.nextInt(this.max[i]);
                 response[i] = "-";
             } else if (secretCombination[i] > firstProposition[i]) {
-                this.min[i] = firstProposition[i];
-                proposition[i] = this.min[i] + rdProp2.nextInt(this.max[i] + 1) - this.min[i];
+                min[i] = firstProposition[i];
+                proposition[i] = rdProp2.nextInt((max[i] - min[i]) + 1) + (min[i] + 1);
                 response[i] = "+";
             } else {
                 response[i] = "=";

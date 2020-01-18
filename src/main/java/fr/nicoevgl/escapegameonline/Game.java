@@ -25,8 +25,8 @@ public class Game {
     String[] response;                  // réponse à la combinaison ( +, - ou = ) //
     int nbEssaysMax;                    // nombre d'essais maximum //
     String[] tableau;                   // tableau de caractères //
-    int[] min = {0, 0, 0, 0};           // valeurs minimales d'une combinaison //
-    int[] max = {9, 9, 9, 9};           // valeurs maximales d'une combinaison //
+    int[] min;                          // valeurs minimales d'une combinaison //
+    int[] max;                          // valeurs maximales d'une combinaison //
     int[] computerProposition;          // première combinaison proposées par l'IA //
     int[] newComputerProposition;       // nouvelles combinaisons proposées par l'IA //
     int[] computerCombination;          // combinaison générées automatiquement par l'IA //
@@ -64,6 +64,8 @@ public class Game {
         computerProposition = new int[combinationSize];
         newComputerProposition = new int[combinationSize];
         computerCombination = new int[combinationSize];
+        max = new int[] {9, 9, 9, 9};
+        min = new int[] {0, 0, 0, 0};
     }
 
     /**
@@ -272,7 +274,7 @@ public class Game {
 
 
     /**
-     * putResultCombi affiche les éléments d'un tableau d'entier
+     * putResultCombi affiche les éléments d'un tableau d'entiers
      *
      * @param tableau [] int
      */
