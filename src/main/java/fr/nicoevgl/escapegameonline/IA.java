@@ -3,6 +3,11 @@ package fr.nicoevgl.escapegameonline;
 import java.util.Random;
 
 public class IA extends Game implements IAttacker, IDefender {
+
+    /**
+     * Permet à l'IA de genérer une combinaison secrète à 4 chiffres.
+     * @return int [] combination
+     */
     @Override
     public int[] generateCombi() {
         Random rdCombi = new Random();
@@ -13,6 +18,11 @@ public class IA extends Game implements IAttacker, IDefender {
     }
 
 
+    /**
+     * Permet à l'IA de générer une première combinaison à 4 chiffres qui sera ensuite comparé à
+     * la combinaison secrète du joueur.
+     * @return int[] proposition
+     */
     @Override
     public int[] generateProp() {
         for (int i = 0; i < combinationSize; i++) {
@@ -22,6 +32,13 @@ public class IA extends Game implements IAttacker, IDefender {
         return proposition;
     }
 
+    /**
+     * Permet à l'IA de générer une nouvelle proposition suite à la comparaison entre la première proposition et
+     * la combinaison secrète du joueur.
+     * @param secretCombination int[], représente la combinaison secrète du joueur.
+     * @param firstProposition int[], représente la proposition de l'IA comparée à la combinaison .
+     * @return int[] proposition
+     */
     @Override
     public int[] generateNewProp(int[] secretCombination, int[] firstProposition) {
         Random rdProp2 = new Random();

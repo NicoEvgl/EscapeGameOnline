@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="5d2561bc-1c15-4a6e-9f87-5103b4d6548e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/all.log" beforeDir="false" afterPath="$PROJECT_DIR$/all.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/HumanPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/HumanPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/IA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/IA.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579276191884</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="resolution bug méthode in IA class">
+      <created>1579379138322</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1579379138322</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -200,7 +209,8 @@
     <MESSAGE value="avancement log&#10;+ règles du jeu dans mode défenseur et mode duel&#10;+ ajout mode développeur dans le mode de jeu défenseur" />
     <MESSAGE value="test log ok" />
     <MESSAGE value="log + noms variables" />
-    <option name="LAST_COMMIT_MESSAGE" value="log + noms variables" />
+    <MESSAGE value="resolution bug méthode in IA class" />
+    <option name="LAST_COMMIT_MESSAGE" value="resolution bug méthode in IA class" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#Project_Structure" timestamp="1578511925476">
@@ -211,10 +221,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="292" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1577369871682" />
-    <state x="281" y="115" key="CommitChangelistDialog2" timestamp="1579276188640">
+    <state x="281" y="115" key="CommitChangelistDialog2" timestamp="1579379137040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="281" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579276188640" />
+    <state x="281" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579379137040" />
     <state x="1089" y="281" key="DetectedRootsChooserDialog" timestamp="1577736395195">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -227,22 +237,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1115" y="320" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1577736391405" />
-    <state width="1877" height="292" key="GridCell.Tab.0.bottom" timestamp="1579379072136">
+    <state width="1877" height="292" key="GridCell.Tab.0.bottom" timestamp="1579438743112">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="292" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579379072136" />
-    <state width="1877" height="292" key="GridCell.Tab.0.center" timestamp="1579379072136">
+    <state width="1877" height="292" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579438743112" />
+    <state width="1877" height="292" key="GridCell.Tab.0.center" timestamp="1579438743112">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="292" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579379072136" />
-    <state width="1877" height="292" key="GridCell.Tab.0.left" timestamp="1579379072136">
+    <state width="1877" height="292" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579438743112" />
+    <state width="1877" height="292" key="GridCell.Tab.0.left" timestamp="1579438743112">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="292" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579379072136" />
-    <state width="1877" height="292" key="GridCell.Tab.0.right" timestamp="1579379072136">
+    <state width="1877" height="292" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579438743112" />
+    <state width="1877" height="292" key="GridCell.Tab.0.right" timestamp="1579438743112">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="292" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579379072136" />
+    <state width="1877" height="292" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579438743112" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1579288553652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

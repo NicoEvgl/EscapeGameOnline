@@ -290,7 +290,7 @@ public class Game {
      *
      * @param combination [] int
      * @param proposition [] int
-     * @return String [] response
+     * @return String[] response
      */
     public String[] compare(int[] combination, int[] proposition) {
         int i = 0;

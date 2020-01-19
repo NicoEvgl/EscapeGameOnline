@@ -3,6 +3,11 @@ package fr.nicoevgl.escapegameonline;
 import java.util.Scanner;
 
 public class HumanPlayer extends Game implements IAttacker, IDefender {
+
+    /**
+     * Permet au joueur de proposer une combinaison à 4 chiffres à l'IA.
+     * @return int[] proposition
+     */
     @Override
     public int[] generateProp() {
         System.out.println("Saisissez votre proposition...");
@@ -28,6 +33,10 @@ public class HumanPlayer extends Game implements IAttacker, IDefender {
         return proposition;
     }
 
+    /**
+     * Permet au joueur de créer sa combinaison secrète à 4 chiffres.
+     * @return int[] combination
+     */
     @Override
     public int[] generateCombi() {
         System.out.println("Saisissez votre combinaison secrète...");
