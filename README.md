@@ -11,8 +11,8 @@ Comment éxécuter l'application :
 
       - Sur l'invit de commande: 1/ Se placer dans le dossier out\artifacts\Escape_Game_ONLINE_jar;
                                  2/ Vérifier que la version du compilateur et de java correspondent: tapper les commandes javac --version, puis: java --version;
-                                 3/ Si les versions ne correspondent pas, compiler l'ensemble des fichiers .java en spécifiant le chemin vers les librairies nécessaires avec la commande javac suivie de l'adresse des fichiers à compiler : 
-                                    javac [options] [fichiers source ] [@files]; ( pour plus d'informations concernant les différentes options de compilation : http://lampwww.epfl.ch/~linuxsoft/java/jdk1.3/docs/tooldocs/solaris/javac.html )
+                                 3/ Si les versions ne correspondent pas, compiler l'ensemble des fichiers .java en spécifiant le chemin vers les librairies nécessaires avec la commande javac suivie de l'adresse des fichiers à compiler :
+                                 javac [options] [fichiers source ] [@files]; 
                                  4/ Tapper la commande suivante: java -jar Escape_Game_ONLINE.jar;
                                  5/ Une fois le jeu lancé, suivre les instructions du jeu.
 
