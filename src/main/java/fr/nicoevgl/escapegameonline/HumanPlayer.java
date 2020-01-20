@@ -28,7 +28,7 @@ public class HumanPlayer extends Game implements IAttacker, IDefender {
             logger.error("Erreur de saisie");
             logger.error("Saisir uniquement des valeurs, aucun caractère spécial ni aucunes chaines de caractères " +
                     "ne sont valables");
-            System.out.println("Veuillez entrer une combinaison valide");
+            logger.error("Veuillez entrer une combinaison valide à 4 chiffres.");
         }
         return proposition;
     }
@@ -57,7 +57,7 @@ public class HumanPlayer extends Game implements IAttacker, IDefender {
             logger.error("Erreur de saisie");
             logger.error("Saisir uniquement des valeurs, aucun caractère spécial ni aucunes chaines de caractères " +
                     "ne sont valables");
-            System.out.println("Veuillez entrer une combinaison valide");
+            logger.error("Veuillez entrer une combinaison valide à 4 chiffres.");
         }
         return combination;
     }

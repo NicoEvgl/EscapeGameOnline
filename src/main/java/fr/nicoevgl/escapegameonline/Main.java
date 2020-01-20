@@ -35,6 +35,7 @@ public class Main {
             } catch (Exception e) {
                 logger.error("Erreur de saisi");
                 logger.error("Saisir uniquement des valeurs, aucun caractère spécial ni aucune chaine de caractères n'est valable");
+
             }
             do {
                 game.runSelectedMode(nbMode);

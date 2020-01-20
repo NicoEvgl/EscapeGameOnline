@@ -39,7 +39,7 @@ public class Game {
      */
     public Game() {
         try {
-            input = new FileInputStream("src/main/resources/config.properties");
+            input = new FileInputStream("config.properties");
             Properties prop = new Properties();
 
             // load propoerties file //
@@ -53,7 +53,6 @@ public class Game {
                 mode_Developpeur = (prop.getProperty("mode.developpeur"));
             }
         } catch (IOException ex) {
-            combinationSize = 4;
             logger.error("Problème de téléchargement du fichier de configuration");
         }
         combination = new int[combinationSize];
