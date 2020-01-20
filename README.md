@@ -17,11 +17,9 @@ Comment éxécuter l'application :
                                  5/ Une fois le jeu lancé, suivre les instructions du jeu.
 
 
-Les modes de jeu :
-
-  1/Challenger : vous devez deviner le code détenu par la machine.
-  2/Défenseur : L'ordinateur tente de deviner votre code.
-  3/Duel : Le premier qui trouve le code de l'autre a gagné.
+Les modes de jeu :  1/Challenger : vous devez deviner le code détenu par la machine.
+                    2/Défenseur : L'ordinateur tente de deviner votre code.
+                    3/Duel : Le premier qui trouve le code de l'autre a gagné.
 Le mode développeur permettant de voir la combinaison de la machine, ainsi que le nombre d'essais et le nombre de chiffres à découvrir sont définis dans le fichier Config.properties.
 
 GOOD GAME !
