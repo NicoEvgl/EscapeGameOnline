@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Escape_Game_ONLINE:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5d2561bc-1c15-4a6e-9f87-5103b4d6548e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/HumanPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/HumanPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/IA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/all.log" beforeDir="false" afterPath="$PROJECT_DIR$/all.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/HumanPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/HumanPlayer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/IA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/IA.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,23 +54,27 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="fr.nicoevgl.escapegameonline" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Documents\DocNico\OpenClassrooms\Projet_3\Escape_Game_ONLINE" />
       <recent name="D:\Documents\DocNico\OpenClassrooms\Projet_3\Escape_Game_ONLINE\src\main\resources" />
       <recent name="D:\Documents\DocNico\OpenClassrooms\Projet_3\Escape_Game_ONLINE\src\main\java\fr\nicoevgl\escapegameonline" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Documents\DocNico\OpenClassrooms\Projet_3\Escape_Game_ONLINE" />
+      <recent name="D:\Documents\DocNico\OpenClassrooms\Projet_3\Escape_Game_ONLINE\src\main\java\fr\nicoevgl\escapegameonline" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="fr.nicoevgl.escapegameonline" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JAR Application.Escape_Game_ONLINE.jar">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fr.nicoevgl.escapegameonline.Main" />
       <module name="Escape_Game_ONLINE" />
@@ -80,8 +88,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Escape_Game_ONLINE.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Escape_Game_ONLINE_jar/Escape_Game_ONLINE.jar" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR Application.Escape_Game_ONLINE.jar" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -193,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579379138322</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="java doc des classes IA et HumanPlayer">
+      <created>1579458603487</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1579458603487</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -210,9 +230,14 @@
     <MESSAGE value="test log ok" />
     <MESSAGE value="log + noms variables" />
     <MESSAGE value="resolution bug méthode in IA class" />
-    <option name="LAST_COMMIT_MESSAGE" value="resolution bug méthode in IA class" />
+    <MESSAGE value="java doc des classes IA et HumanPlayer" />
+    <option name="LAST_COMMIT_MESSAGE" value="java doc des classes IA et HumanPlayer" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="997" y="167" key="#Escape_Game_ONLINE.jar" timestamp="1579460562586">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="997" y="167" key="#Escape_Game_ONLINE.jar/0.0.1920.1040@0.0.1920.1040" timestamp="1579460562586" />
     <state x="552" y="179" key="#Project_Structure" timestamp="1578511925476">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -221,10 +246,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="292" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1577369871682" />
-    <state x="281" y="115" key="CommitChangelistDialog2" timestamp="1579379137040">
+    <state x="1036" y="287" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1579492090618">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="281" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579379137040" />
+    <state x="1036" y="287" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579492090618" />
+    <state x="281" y="115" key="CommitChangelistDialog2" timestamp="1579458601207">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="281" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1579458601207" />
     <state x="1089" y="281" key="DetectedRootsChooserDialog" timestamp="1577736395195">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -233,26 +262,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="121" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578513760651" />
-    <state x="1115" y="320" key="FileChooserDialogImpl" timestamp="1577736391405">
+    <state x="1115" y="320" key="FileChooserDialogImpl" timestamp="1579492102010">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1115" y="320" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1577736391405" />
-    <state width="1877" height="292" key="GridCell.Tab.0.bottom" timestamp="1579438743112">
+    <state x="1115" y="320" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1579492102010" />
+    <state width="1877" height="289" key="GridCell.Tab.0.bottom" timestamp="1579492186636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="292" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579438743112" />
-    <state width="1877" height="292" key="GridCell.Tab.0.center" timestamp="1579438743112">
+    <state width="1877" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579492186636" />
+    <state width="1877" height="289" key="GridCell.Tab.0.center" timestamp="1579492186636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="292" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579438743112" />
-    <state width="1877" height="292" key="GridCell.Tab.0.left" timestamp="1579438743112">
+    <state width="1877" height="289" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579492186636" />
+    <state width="1877" height="289" key="GridCell.Tab.0.left" timestamp="1579492186636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="292" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579438743112" />
-    <state width="1877" height="292" key="GridCell.Tab.0.right" timestamp="1579438743112">
+    <state width="1877" height="289" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579492186636" />
+    <state width="1877" height="289" key="GridCell.Tab.0.right" timestamp="1579492186636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="292" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579438743112" />
+    <state width="1877" height="289" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579492186636" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1579288553652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -273,10 +302,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="176" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577736485025" />
-    <state x="786" y="78" key="SettingsEditor" timestamp="1578660382251">
+    <state x="795" y="99" key="SettingsEditor" timestamp="1579492114368">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="786" y="78" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578660382251" />
+    <state x="795" y="99" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1579492114368" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1579458662366">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1579458662366" />
+    <state x="1110" y="372" key="classpath-attribute-editor" timestamp="1579460772952">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1110" y="372" key="classpath-attribute-editor/0.0.1920.1040@0.0.1920.1040" timestamp="1579460772952" />
     <state x="1039" y="459" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1577736385922">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
