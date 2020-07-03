@@ -39,7 +39,7 @@ public class Game {
      */
     public Game() {
         try {
-            input = new FileInputStream("config.properties");
+            input = new FileInputStream("./config.properties");
             Properties prop = new Properties();
 
             // load propoerties file //
