@@ -37,25 +37,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d2561bc-1c15-4a6e-9f87-5103b4d6548e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dependency-reduced-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Escape_Game_ONLINE_jar/Escape_Game_ONLINE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/nicoevgl/escapegameonline/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/HumanPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/HumanPlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/IA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/IA.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/IAttacker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/IAttacker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/IDefender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/IDefender.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fr/nicoevgl/escapegameonline/Main.class" afterDir="false" />
-    </list>
+    <list default="true" id="5d2561bc-1c15-4a6e-9f87-5103b4d6548e" name="Default Changelist" comment="Correctif vulnérabilité, MAJ version log4j" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -152,7 +134,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577312999884</updated>
-      <workItem from="1593801782008" duration="1028000" />
+      <workItem from="1593801782008" duration="1441000" />
     </task>
     <task id="LOCAL-00001" summary="Création classe &quot;Game&quot; ( parent class ) + constructeurs&#10;+ add interfaces IAttacker et IDefender.">
       <created>1577316813196</created>
@@ -252,7 +234,28 @@
       <option name="project" value="LOCAL" />
       <updated>1579492319729</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="création fichier Escape_Game_ONLINE.jar + MANIFEST.MF">
+      <created>1593802840748</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1593802840748</updated>
+    </task>
+    <task id="LOCAL-00016" summary="création fichier Escape_Game_ONLINE.jar + MANIFEST.MF">
+      <created>1593802851152</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1593802851152</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Correctif vulnérabilité, MAJ version log4j">
+      <created>1593802986376</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1593802986376</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +288,8 @@
     <MESSAGE value="resolution bug méthode in IA class" />
     <MESSAGE value="java doc des classes IA et HumanPlayer" />
     <MESSAGE value="création fichier Escape_Game_ONLINE.jar + MANIFEST.MF" />
-    <option name="LAST_COMMIT_MESSAGE" value="création fichier Escape_Game_ONLINE.jar + MANIFEST.MF" />
+    <MESSAGE value="Correctif vulnérabilité, MAJ version log4j" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correctif vulnérabilité, MAJ version log4j" />
   </component>
   <component name="WindowStateProjectService">
     <state x="745" y="222" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1593802030142">
@@ -308,5 +312,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="303" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1593802787823" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1593803139727">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1593803139727" />
   </component>
 </project>
