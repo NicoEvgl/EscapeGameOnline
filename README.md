@@ -9,7 +9,7 @@ Comment éxécuter l'application :
                  4/ Cliquer sur Executer le programme; 
                  5/ Une fois le jeu lancé, suivre les instructions du jeu affichées dans le terminal de votre IDE.
 
-      - Sur l'invit de commande: 1/ Se placer dans le dossier out\artifacts\Escape_Game_ONLINE_jar;
+      - Sur l'invit de commande: 1/ Se placer dans le dossier target/ où se trouve le fichier Escape_Game_ONLINE_jar;
                                  2/ Vérifier que la version du compilateur et de java correspondent: tapper les commandes javac --version, puis: java --version;
                                  3/ Si les versions ne correspondent pas, compiler l'ensemble des fichiers .java en spécifiant le chemin vers les librairies nécessaires avec la commande javac suivie de l'adresse des fichiers à compiler :
                                  javac [options] [fichiers source ] [@files]; 
