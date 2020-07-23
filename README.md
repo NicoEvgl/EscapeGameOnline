@@ -13,7 +13,7 @@ Comment éxécuter l'application :
                                  2/ Vérifier que la version du compilateur et de java correspondent: tapper les commandes javac --version, puis: java --version;
                                  3/ Si les versions ne correspondent pas, compiler l'ensemble des fichiers .java en spécifiant le chemin vers les librairies nécessaires avec la commande javac suivie de l'adresse des fichiers à compiler :
                                  javac [options] [fichiers source ] [@files]; 
-                                 4/ Tapper la commande suivante: java -jar Escape_Game_ONLINE.jar;
+                                 4/ Tapper la commande suivante: java -jar Escape_Game_ONLINE-1.0-SNAPSHOT.jar;
                                  5/ Une fois le jeu lancé, suivre les instructions du jeu.
 
 
